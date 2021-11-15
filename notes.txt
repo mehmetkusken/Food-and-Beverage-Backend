@@ -1,0 +1,44 @@
+- User
+    - id
+    - username
+    - email
+    - password
+    - google_auth
+- Restaurant
+    - id
+    - user_id
+    - name (string)
+    - url (string)
+    - latitude (float)
+    - longtitude (float)
+    - image_url (string)
+    - address (string)
+    - description (string)
+    - zip_code (integer)
+    - yelp_id (string)
+    - score (float)
+    - phone_number (string)
+    
+- Address
+    - id
+    - user_id
+    - title
+    - latitude
+    - longtitude
+    - address
+    - zip_code
+- Notes
+    - id
+    - user_id
+    - restaurant_id
+    - description
+    - created_date (datetime)
+
+- User hasMany Address
+- Address BelongsTo User
+- User HasMany Restourant
+- User HasMany Notes Through Restourant
+- Restourant HasMany Notes
+- Restourant BelongsTo User
+- Notes BelongsTo User
+- Notes BelongsTo Restourant
