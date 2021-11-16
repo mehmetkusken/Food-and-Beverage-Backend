@@ -7,17 +7,17 @@
 - Restaurant
     - id
     - user_id
-    - name (string)
-    - url (string)
-    - latitude (float)
-    - longtitude (float)
-    - image_url (string)
-    - address (string)
-    - description (string)
-    - zip_code (integer)
-    - yelp_id (string)
-    - score (float)
-    - phone_number (string)
+    - name (string)x
+    - url (string)x
+    - latitude (float)x
+    - longtitude (float)x
+    - image_url (string)x
+    - address (string)x
+    - description (string)x
+    - zip_code (integer)x
+    - yelp_id (string)x
+    - score (float)x
+    - phone_number (string)x
     
 - Address
     - id
