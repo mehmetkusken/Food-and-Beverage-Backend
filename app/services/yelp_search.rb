@@ -16,7 +16,7 @@ class YelpSearch
 
     def to_restaurants
 
-        self.businesses.map do |business|
+        restaurant_ids = self.businesses.map do |business|
             Restaurant.find_or_create_by(yelp_id: business["id"]) do |restaurant|
                 restaurant.name = business["name"]
                 restaurant.url = business["url"]
@@ -28,7 +28,8 @@ class YelpSearch
                 restaurant.description = business["categories"].map{|hash| hash["title"]}.join(", ")
                 restaurant.score = business["rating"]
                 restaurant.phone = business["phone"]
-            end
+            end.id
         end
+        Restaurant.where(id: restaurant_ids)
     end
 end

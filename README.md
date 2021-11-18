@@ -23,4 +23,10 @@ Things you may want to cover:
 
 * ...
 # Food-and-Beverage-Backend
+
+# To Run
+run rails db:create
+run rails db:migrate
+Create .env file
+Get a yelp api key and add it to the .env file
 # Food-and-Beverage-Backend
