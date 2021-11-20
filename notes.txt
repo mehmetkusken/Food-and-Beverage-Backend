@@ -3,7 +3,7 @@
     - username
     - email
     - password
-    - google_auth
+    - zip zip_code
 - Restaurant
     - id
     - user_id
@@ -19,19 +19,12 @@
     - score (float)x
     - phone_number (string)x
     
-- Address
-    - id
-    - user_id
-    - title
-    - latitude
-    - longtitude
-    - address
-    - zip_code
-- Notes
+
+- Comment
     - id
     - user_id
     - restaurant_id
-    - description
+    - content
     - created_date (datetime)
 
 - User hasMany Address
