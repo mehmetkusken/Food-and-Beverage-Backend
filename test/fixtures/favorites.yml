@@ -3,11 +3,9 @@
 one:
   user: one
   restaurant: one
-  content: MyText
-  created_date: 2021-11-19 19:11:27
+  is_favorite: false
 
 two:
   user: two
   restaurant: two
-  content: MyText
-  created_date: 2021-11-19 19:11:27
+  is_favorite: false

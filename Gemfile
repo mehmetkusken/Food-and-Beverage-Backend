@@ -48,9 +48,8 @@ gem "active_model_serializers", "~> 0.10.12"
 
 
 
-
 gem "http", "~> 5.0"
 
-
+gem 'graphql'
 
 gem "jwt", "~> 2.3"

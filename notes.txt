@@ -27,11 +27,9 @@
     - content
     - created_date (datetime)
 
-- User hasMany Address
-- Address BelongsTo User
-- User HasMany Restourant
-- User HasMany Notes Through Restourant
-- Restourant HasMany Notes
-- Restourant BelongsTo User
-- Notes BelongsTo User
-- Notes BelongsTo Restourant
+- User hasMany restaurants
+- User hasMany comments
+- Restaurant hasMany user
+- Restaurant hasMany comments
+- Comment belongs to user
+- Comment belongs to restaurant
