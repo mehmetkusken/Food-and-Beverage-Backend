@@ -6,19 +6,18 @@ class FavoritesController < ApplicationController
     end
 
     def create
-        favorite = logged_in_user.favorites.create!(favorite_params)
-        render json: favorite
+        restaurant = Restaurant.find(params[:restaurant_id])
+        user = logged_in_user
+        favorite = Favorite.create(restaurant:restaurant , user: user )
     end
 
     def destroy
         favorite = Favorite.find(params[:id])
         favorite.destroy
-        render json: {message: 'Restaurant deleted'}
+        render json: {message: "Successfully removed favorite"}
     end
 
-    private
-
-    def favorite_params
-        params.permit(:restaurant_id, :user_id , :is_favorite)
-    end
+     
+    
+    
 end
