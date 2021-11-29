@@ -23,6 +23,11 @@ Things you may want to cover:
 
 * ...
 # Food-and-Beverage-Backend
+Welcome to F&B Finder!
+
+This is the back end of the Foodr application. The front end can be found here: https://github.com/mehmetkusken/Food-and-Beverage-Finder-Frontend.git
+
+To run this application, you will need to have access to API keys for Yelp Fusion API and Google Maps API.
 
 # To Run
 run rails db:create
