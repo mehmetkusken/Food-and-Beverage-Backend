@@ -9,6 +9,7 @@ class FavoritesController < ApplicationController
         restaurant = Restaurant.find(params[:restaurant_id])
         user = logged_in_user
         favorite = Favorite.create(restaurant:restaurant , user: user )
+        render json: {message: "Successfully added favorite"}
     end
 
     def destroy
