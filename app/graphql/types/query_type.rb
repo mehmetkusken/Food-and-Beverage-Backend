@@ -14,7 +14,7 @@ module Types
         argument :description, String, required: false
       end
 
-    def restaurants(location: nil,description: "lunch")
+    def restaurants(location: nil , description: "lunch")
       location ||= context[:logged_in_user].zipcode
       Restaurant.search(location,description)
     end

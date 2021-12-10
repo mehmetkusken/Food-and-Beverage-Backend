@@ -1,7 +1,7 @@
 class FavoritesController < ApplicationController
 
     def index
-        favorites = Favorite.all
+        favorites = logged_in_user.favorites
         render json: favorites
     end
 
